@@ -1,0 +1,45 @@
+import { Button, Checkbox } from 'evergreen-ui';
+import React from 'react';
+import { CloseOutline } from 'react-ionicons';
+import classes from '../styles/filter.module.css';
+const FilterSidebar = () => {
+  return (
+    <aside className={classes['sidebar']}>
+      <div className={classes['model-content']}>
+        <div className={classes['model-content-box']}>
+          <h4>Sizes</h4>
+          <div className={classes['model-box-items']}>
+            <Checkbox label="S" checked />
+            <Checkbox label="M" />
+            <Checkbox label="L" />
+            <Checkbox label="XL" />
+            <Checkbox label="XXL" />
+          </div>
+        </div>
+        <div className={classes['model-content-box']}>
+          <h4>Product Type</h4>
+          <div className={classes['model-box-items']}>
+            <Checkbox label="Blouse" checked />
+            <Checkbox label="Cardigan" />
+            <Checkbox label="Clothing" />
+            <Checkbox label="Dresses" />
+            <Checkbox label="Jacket" />
+            <Checkbox label="Jeans" />
+            <Checkbox label="Leggings" />
+            <Checkbox label="Pants" />
+            <Checkbox label="Pullover" />
+            <Checkbox label="Scarf" />
+            <Checkbox label="Shirt" />
+            <Checkbox label="Shirt & Tops" />
+            <Checkbox label="Sweatshirt" />
+            <Checkbox label="T-Shirt" />
+            <Checkbox label="Tops" />
+            <Checkbox label="Vest" />
+          </div>
+        </div>
+      </div>
+    </aside>
+  );
+};
+
+export default FilterSidebar;

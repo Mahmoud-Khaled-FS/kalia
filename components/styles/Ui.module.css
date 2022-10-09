@@ -1,0 +1,7 @@
+.btn {
+  border: none !important;
+  transition: 0.3s !important;
+}
+.btn:hover {
+  background-color: var(--pink-4) !important;
+}
