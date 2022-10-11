@@ -12,7 +12,7 @@ const ProductGridItem = () => {
       <div className={classes['grid-banner']}>
         <div className={classes['default'] + ' ' + classes['grid-image']}>
           <Image
-            src={'https://placehold.jp/d364b2/ffffff/300x300.png'}
+            src={require('../../assets/51cb1f36-6006-4f1b-a55e-05a242261fc6.jpeg')}
             loader={loaderProp}
             width="100%"
             height="100%"
@@ -21,7 +21,7 @@ const ProductGridItem = () => {
             objectFit="contain"
           />
         </div>
-        <div className={classes['hover'] + ' ' + classes['grid-image']}>
+        {/* <div className={classes['hover'] + ' ' + classes['grid-image']}>
           <Image
             width="100%"
             height="100%"
@@ -31,7 +31,7 @@ const ProductGridItem = () => {
             alt="product"
             objectFit="contain"
           />
-        </div>
+        </div> */}
         <span className={classes['grid-badge']}>15%</span>
         <div className={classes['product-action']}>
           <button className={classes['action-btn']}>
@@ -44,7 +44,7 @@ const ProductGridItem = () => {
       </div>
       <div className={classes['grid-content']}>
         <Link href="/">
-          <a className={classes['grid-link-category']}>Dress</a>
+          <a className={classes['grid-link-category']}>T-shirt</a>
         </Link>
         <Link href="/">
           <h3 className={classes['grid-title']}>Maxi Floral Lace Bust Gown</h3>

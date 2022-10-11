@@ -1,7 +1,8 @@
-import { Button, Checkbox } from 'evergreen-ui';
+import { Checkbox } from 'evergreen-ui';
 import React from 'react';
 import { CloseOutline } from 'react-ionicons';
 import classes from '../styles/filter.module.css';
+import Button from '../UI/Button';
 type Props = {
   onClose: () => void;
 };
@@ -50,17 +51,7 @@ const FilterModel: React.FC<Props> = (props) => {
           </div>
         </div>
         <div className={classes['model-submit']}>
-          <Button
-            marginTop="20px"
-            width="100%"
-            paddingY="23px"
-            fontSize="18px"
-            color="#fff"
-            backgroundColor="#000"
-            className="btn"
-          >
-            View Items
-          </Button>
+          <Button marginTop="20px">View Items</Button>
         </div>
       </div>
     </div>

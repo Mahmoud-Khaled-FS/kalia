@@ -108,6 +108,7 @@
   min-width: 100% !important;
   width: 100% !important;
   position: relative !important;
+  /* overflow: hidden; */
 }
 .grid-image img {
   aspect-ratio: 1 / 1;
@@ -124,11 +125,12 @@
   z-index: 2;
   opacity: 0;
 }
-.product-grid-item:hover .grid-image.hover {
+/* .product-grid-item:hover .grid-image.hover {
   opacity: 1;
-}
+} */
 .product-grid-item:hover .grid-image.default {
-  opacity: 0;
+  transform: scale(1.1);
+  /* opacity: 0; */
 }
 .grid-badge {
   position: absolute;

@@ -5,6 +5,7 @@ import MobileNavigation from '../navigation/MobileNavigation';
 import classes from '../styles/header.module.css';
 import { PersonOutline, BagOutline, SearchOutline, HeartOutline } from 'react-ionicons';
 import Link from 'next/link';
+import Image from 'next/image';
 const Header = () => {
   return (
     <header className={classes['header']}>
@@ -21,7 +22,14 @@ const Header = () => {
           </ul>
           <div className={classes['logo']}>
             <Link href="/">
-              <a className="playFont">Kalia</a>
+              <Image
+                height="100%"
+                objectFit="contain"
+                // width="200px"
+                src={require('../../assets/tg_image_582897388.png')}
+                alt="kalia"
+              />
+              {/* <a className="playFont">Kalia</a> */}
             </Link>
           </div>
           <div className={classes['action']}>

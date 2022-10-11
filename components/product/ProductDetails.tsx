@@ -1,7 +1,8 @@
-import { Button } from 'evergreen-ui';
+// import { Button } from 'evergreen-ui';
 import Image from 'next/image';
 import React from 'react';
 import classes from '../styles/productDetails.module.css';
+import Button from '../UI/Button';
 const ProductDetails = () => {
   return (
     <div className={classes['product-page']}>
@@ -70,17 +71,7 @@ const ProductDetails = () => {
               </ul>
             </div>
             <div className={classes['colors']}>
-              <Button
-                marginTop="40px"
-                width="100%"
-                paddingY="23px"
-                fontSize="18px"
-                color="#fff"
-                backgroundColor="#000"
-                className="btn"
-              >
-                Add To Cart
-              </Button>
+              <Button marginTop="40px">Add To Cart</Button>
             </div>
           </div>
         </div>

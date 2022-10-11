@@ -8,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  /* min-height: 70px; */
+  cursor: pointer;
+}
 .logo a {
   font-size: 24px;
   font-weight: 700;
